@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Base surfaces — light theme built from alabaster-grey / dusty-denim / dusk-blue */
+  --color-bg: #e0e1dd;
+  --color-surface: #ffffff;
+  --color-surface-2: #f4f6f8;
+  --color-border: #d3d9de;
+  --color-border-strong: #778da9;
+
+  /* Foreground */
+  --color-fg: #111315;
+  --color-fg-muted: #4a4f57;
+  --color-fg-subtle: #8a8f99;
+
+  /* Accent (primary interactive) */
+  --color-accent: #415a77;
+  --color-accent-fg: #e0e1dd;
+  --color-accent-hover: #4f6d8e;
+
+  /* Semantic status colors, recalibrated for a light background */
+  --color-warning: #b7791f;
+  --color-warning-bg: #fdf3e0;
+  --color-warning-fg: #7a5211;
+
+  --color-danger: #d1483d;
+  --color-danger-bg: #fbe9e7;
+  --color-danger-fg: #9c2b21;
+
+  --color-success: #2f9e64;
+  --color-success-bg: #e6f5ec;
+  --color-success-fg: #1c6b41;
+
+  --color-info: #3f72b3;
+  --color-info-bg: #e8f0fa;
+  --color-info-fg: #244d80;
+
+  --color-notice: #a8529a;
+  --color-notice-bg: #f6e9f3;
+  --color-notice-fg: #6f2f66;
+
+  --radius-md: 0.625rem;
+  --radius-lg: 0.875rem;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
